@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: portal
+email: portal@portal.com
+description: "Portal de notícias feito com Jekyll"
+baseurl: "/"
+url: "http://example.com"
+twitter_username: portal
+github_username:  portal
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
