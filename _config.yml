@@ -1,19 +1,42 @@
-# Welcome to Jekyll!
+# Bem vindo ao Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Este arquvivo de configuração é para definições que afetam todo o seu blog,
+# valores que você deve configurar uma vez e depois raramente precisará editar algo aqui.
+# Por motivos técnicos este arquivo não é recarregado automáticamente quando você usa o comando
+# 'jekyll serve'. Se você alterar esse arquivo, reinicie o processo no servidor.
 
-# Site settings
-title: portal
-email: portal@portal.com
-description: "Portal de notícias feito com Jekyll"
-baseurl: "/"
-url: "http://example.com"
-twitter_username: portal
-github_username:  portal
+# Configurações do Site
+title: Portal Jekyll
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
 
-# Build settings
+# Configurações de Markdown 
 markdown: kramdown
-permalink: /:title/
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Configurações de Sass
+sass:
+  add_charset: true
+  sass_dir: assets/sass
+  style: :compressed
+
+# Configurações de Build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - CNAME
+  - node_modules
+  - assets/sass
+
+# Plugins
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
